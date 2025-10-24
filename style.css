@@ -91,21 +91,157 @@ h1 {
 }
 
 .hero{
-    background-image: url(kwiaty.jpg);
-    height: 500px;
+    background-image: linear-gradient(rgba( 0, 0, 0, 0.4)), url(kwiaty.jpg);
+    background-size: cover;
+    min-height: 40rem;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: white;
 }
 
-
-.onas img {
-    width: 50%;
-    height: 100%;
+.hero h1{
+    font-size: 4rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
-.content-1 {
-    padding: 0.8rem;
-    flex-direction: column;
+.hero p{
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+}
+
+.onas {
+    background-color: white;
+    padding: 5rem 2rem;
+    gap: 4rem;
+    align-items: center;
+}
+
+.onas p {
+    margin-bottom: 1em;
+}
+
+.onasobraz{
+    flex: 1 1 400px;
+    max-width: 50%;
+}
+
+.onas img{
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px rgba( 0, 0, 0, 0.04);
+}
+
+.dlaczegomy {
+    background-color: var(--color-background);
+    gap: 2rem;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    text-align: center;
 }
+
+.pochwala {
+    flex: 1 1 200px;
+    border-radius: 0.5rem;
+    max-width: 200px;
+}
+
+.karta-produktu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.box {
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px rgba( 0, 0, 0, 0.05);
+    text-align: center;
+    padding-bottom: 1.5rem;
+    max-width: 350px;
+    flex: 1 1 300px;
+}
+
+.karta-produktu img{
+    width: 100%;
+}
+
+.karta-produktu button {
+    background-color: var(--color-secondary);
+    padding: 0.8rem 1.5rem;
+}
+
+.sekcjakontaktu{
+    background-color: var(--color-background);
+    padding: 5rem 2rem;
+    gap: 4rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.kontakt input[type="text"],
+.kontakt input[type="email"],
+.kontakt textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.lokalizacja h2{
+    font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.lokalizacja, .kontakt{
+  flex: 1 1 450px;
+  max-width: 50%;
+}
+
+.mapa{
+  width: 100%;
+  height: 20rem; 
+  background-color: #ddd;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  font-style: italic;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* footer */
+
+footer{
+   background-color: #444;
+  color: #ddd;
+  text-align: center;
+  justify-content: center; 
+  min-height: 5rem;
+}
+
+
+@media screen and (max-width: 800px)
+{
+
+.flex-container{
+flex-direction: column;
+}
+
+.onasobraz{
+  display: none;
+
+}
+
+
+}
+  
